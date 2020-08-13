@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MetraforAll</title>
+
+  <link rel="shortcut icon" href="images/favico.ico" type="image/x-icon">
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="secondary-bg no-shadow" role="navigation">
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo"><span class="logo-em">Metra</span>forAll </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#anal">Ανάλυση</a></li>
+          <li><a href="#about">Σχετικά με εμάς</a></li>
+          <li><a href="#contact">Επικοινωνία</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <!-- Mobile menu only shows on small screens and expands when triggered -->
+  <ul id="nav-mobile" class="sidenav">
+    <li><a href="#anal">Ανάλυση</a></li>
+    <li><a href="#about">Σχετικά με εμάς</a></li>
+    <li><a href="#contact">Επικοινωνία</a></li>
+  </ul>
+
+  <header>
+    <div class="section cta-container">
+      <div class="container">
+        <h1 class="header center secondary-text-darken">Μέτρα απέναντι στον SARS-CoV-2</h1>
+        <div class="row center">
+          <h5 class="col s12 light white-text">
+            Χρησιμοποιόντας ένα μοντέλο που χτίστηκε με Μηχανική Μάθηση, προβλέπουμε το κατα πόσον μια πολιτεία της Αμερικής πρέπει να λάβει μέτρα
+	    απέναντι στον SARS-CoV-2
+          </h5>
+        </div>
+        <div class="row center">
+          <a  class="btn-large waves-effect waves-light">
+            Μαθε περισσοτερα για το μοντελο μας!
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" id="anal">
+      <div class="section">
+        <div class="row">
+
+              <h5 class="center">Επιλογή Πολιτείας προς ανάλυση</h5>
+              <p class="light">
+		<form id="form" >
+		  Επιλογή Πολιτείας(abbreviation): <input type="text" value="ca" id="country" name="country">
+		  Επιλογή Ημερομηνίας(σε μοργή yyyymmdd): <input type="text" value="20200810" id="date" name="date">
+	          <div class="input-field col s12 m2">
+                    <button class="btn waves-effect waves-light" type="submit" id="EDW">
+                      Submit
+                    </button>
+                   </div>
+		</form>
+	      </p>
+            </div>
+          </div>
+	<h5 id="print1"> </h5>
+        </div>
+      </div>
+    </div>
+    <div class="col s3 m7 center">
+    	<img src="images/clustering.jpg" width="800" height="600" >
+     </div>
+    <div class="container" id="about">
+      <div class="section">
+        <div class="row">
+          <div class="col sm12">
+            <h2>Σχετικά με εμάς</h2>
+		<p>
+		Γεια σας! Είμαι ο Στέφανος-Σταμάτης Αχλάτης. Είμαι φοιτητής στο τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών του Εθνικού Μετσόβιου Πολυτεχνείου.
+		Από τον Μάρτιο του 2020 ασχολούμαι με την μελέτη και την κατανόηση του SARS-Cov-2, μελετώντας και εφαρμόζοντας στατιστικές μελέτες πάνω στην πορεία του ιου.
+		Για αυτό και επέλεξα να δημιουργήσω αυτή την εφαρμογή όπου ουσιαστικά εφαρμόζει και επεκτείνει μια προηγούμενη μελέτη μου πάνω στον SARS-Cov-2. Να τονιστεί ότι η κατηγοριοποίηση των πολιτειών σε κλασεις προήλθε από προηγούμενη εργασία μου και έχει ουσιαστική θεμελίωση από πίσω, ενώ η πρόβλεψη που γίνεται εδώ δεν έχει κάποιο επιστημονικό ενδιαφέρον, απλά με βάση την εκαστοτε κλάση που ανήκει η κάθε πολιτεία ελέγχει αν την συγκεκριμένη μέρα ξεπερνάει ένα threshold, αν ναι τότε η εφαρμογή προτείνη μέτρα.
+		 </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m4 ">
+            <img src="images/achlatis.jpg"  class="circle responsive-img headshot">
+            <p class="center employee-name">Στέφανος-Σταμάτης Αχλάτης</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="primary-bg">
+      <div class="container">
+        <div class="row quote-wrapper">
+          <div class="col s12 white-text">
+            <i class="material-icons medium">format_quote</i>
+            <h5><em>Γιατί κάνετε τόση φασαρία για τους ηλικιωμένους και ανίκανους από τα χρόνια νοσήματα;
+		    Tο θαύμα της ιατρική επιστήμης είναι η παράταση της ποιοτικής επιβίωσης αυτών των ατόμων,
+		    πολλοί εκ των όποιων είναι οι μανάδες και πατεράδες μας,
+		    οι γιαγιάδες και οι παππούδες μας. Τιμούμε όλους, σεβόμαστε όλους, προστατεύουμε όλους, κατεξοχήν αυτούς.
+		     Δεν μπορούμε να υπάρχουμε , ούτε να έχουμε ταυτότητα χωρίς αυτούς.</em></h5>
+	    <h4> Σωτήρης Τσίοδρας </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="contact">
+      <div class="section">
+        <div class="row">
+          <div class="col sm12 m10 offset-m1">
+            <h2>Εγγραφή στο newsletter μας!</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12 m8 offset-m1">
+            <input id="email" type="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field col s12 m2">
+            <button class="btn waves-effect waves-light" type="submit2">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s3 m7 center">
+      <img src="images/emp.jpg" >
+     </div>
+  </main>
+
+  <footer class="page-footer custom-footer secondary-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Πληροφορίες για την εργασία</h5>
+          <p class="grey-text text-lighten-4">
+		Η εργασία έγινε στα πλαίσια του μαθήματος Διαδίκτυο και Εφαρμογές του ΕΜΠ(NTUA) το
+		ακαδημαικό έτος 2019-2020.
+          </p>
+        </div>
+        <div class="col l3 s6">
+        </div>
+        <div class="col l3 s6">
+          <h5 class="white-text">Βρείτε μας στα Social Media</h5>
+          <ul>
+            <li><a class="white-text" href="#">Facebook</a></li>
+            <li><a class="white-text" href="#">Twitter</a></li>
+            <li><a class="white-text" href="#">Instagram</a></li>
+            <li><a class="white-text" href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Created by: <a class="white-text">Αχλάτης Στέφανος-Σταμάτης ~ 2020</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+  <script type="text/javascript" src="scripts/script.js"></script>
+
+
+  <script>
+
+document.querySelector("form").addEventListener("click", function(event) {
+        var data = document.getElementById("form");
+        var api_url = 'https://api.covidtracking.com/v1/states/'+data.elements[0].value+'/'+data.elements[1].value+'.json';
+	      event.preventDefault();
+
+async function getAPI(){
+                const response  = await fetch (api_url);
+                const data = await response.json();
+                const {state,positiveIncrease} = data;
+                getDatabase(positiveIncrease);
+        }
+
+async function getDatabase(positiveIncrease){
+               const response  = await fetch ('/api');
+               const data = await response.json();
+
+               for (item of data){
+                  const root = document.createElement('div');
+                  const state = document.createElement('div');
+                  const status = document.createElement('div');
+
+                  var a = item.state;
+                  var lala = document.getElementById("form");
+                  var b = lala.elements[0].value;
+
+
+                  if (a.localeCompare(b) == 0 ){
+                    var final_status = item.status;
+                    console.log('Status is '+ item.status);
+                    if (final_status == 2 && positiveIncrease > 7000)
+                    document.getElementById("print1").innerHTML = "Πρέπει να εφαρμόσετε μέτρα!";
+                    if (final_status == 2 && positiveIncrease < 7000)
+                    document.getElementById("print1").innerHTML = "Δεν χρειαζεται να εφαρμοσετε μέτρα!";
+                    if (final_status == 3 && positiveIncrease > 5500)
+                    document.getElementById("print1").innerHTML = "Πρέπει να εφαρμόσετε μέτρα!";
+                    if (final_status == 3 && positiveIncrease < 5500)
+                    document.getElementById("print1").innerHTML = "Δεν χρειαζεται να εφαρμοσετε μέτρα!";
+
+                  }
+               }
+
+               }
+        getAPI();
+
+}, false);
+  </script>
+</body>
+</html>

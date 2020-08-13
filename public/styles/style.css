@@ -1,0 +1,163 @@
+:root {
+  --black: #404040;
+  --primary-color: #81d4fa; /* blue */
+  --primary-color-lighten-1: #b3e5fc;
+  --primary-color-darken-1: #4fc3f7;
+  --secondary-color: #ff7043; /* orange */
+  --secondary-color-lighten-1: #ff8a65;
+  --secondary-color-darken-1: #ff5722;
+  --tertiary-color: #ffeb3b;
+  --primary-font: 'Playfair Display', serif;
+  --secondary-font: 'Josefin Sans', sans-serif;
+}
+
+
+body,
+p,
+a,
+button {
+  font-family: 'Playfair Display', serif; 
+  font-family: var(--primary-font);
+}
+
+body,
+p {
+  color: #404040;
+  color: var(--black);
+}
+
+
+@media (max-width: 375px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--secondary-font);
+}
+
+h5 {
+  line-height: 135%;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+  background-color: var(--primary-color);
+  font-family: 'Playfair Display', serif;
+  font-family: var(--primary-font);
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+  background-color: var(--primary-color-darken-1);
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+nav .brand-logo {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+}
+
+.logo-em {
+  color: var(--primary-color);
+  font-family: 'Playfair Display', serif;
+  font-family: var(--primary-font);
+  font-style: italic;
+  font-size: 1.9rem;
+}
+
+.card {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-family: var(--primary-font);
+}
+
+.card-title i {
+  color: var(--tertiary-color);
+}
+
+.primary-bg {
+  background-color: var(--primary-color);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-color);
+}
+
+.primary-text {
+  color: var(--primary-color);
+}
+
+.primary-text-darken {
+  color: var(--primary-color-darken-1);
+}
+
+.secondary-text {
+  color: var(--secondary-color);
+}
+
+.secondary-text-darken {
+  color: var(--secondary-color-darken-1);
+}
+
+.no-shadow {
+  box-shadow: none;
+}
+
+
+
+.cta-container {
+  background: linear-gradient(var(--secondary-color), var(--tertiary-color));
+  padding: 75px 0;
+}
+
+.custom-footer {
+  background: linear-gradient(var(--tertiary-color), var(--secondary-color));
+}
+
+.image-section {
+  height: 500px;
+}
+
+.quote-wrapper {
+  font-family: var(--primary-font);
+  padding: 50px 0;
+  position: relative;
+}
+
+.quote-wrapper i {
+  color: var(--secondary-color);
+  left: -35px;
+  top: 35px;
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@media (max-width: 375px) {
+  .headshot {
+    max-width: 250px;
+  }
+
+  .quote-wrapper i {
+    left: -25px;
+    top: 25px;
+  }
+}
